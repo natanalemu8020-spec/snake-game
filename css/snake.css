@@ -1,0 +1,68 @@
+.snakeim img{ 
+ width: 400px;
+  }
+
+
+.canvas {
+     background-color: black; 
+  }
+  
+  .relbutn {
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 17px;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  .relbutn:hover {
+    background-color: aquamarine;    
+  }
+  
+  
+  .game-site {
+    display: none;
+  }
+  .start{
+  padding: 10px;  
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 200px;
+  margin-left: 70px;
+  border: none;
+  font-size: 17px;
+  background-color: rgb(255, 230, 0);
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  }
+  .start:hover{
+    opacity: 0.7;
+  }
+  
+.Developed{
+margin-top: 100px;  
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgba(0, 0, 0, 0.56);;
+background-color: rgb(245, 245, 247);
+padding: 70px;
+text-align: center;
+
+}
+
+@media(max-width:1000px){
+  .snakeim img{
+    width: 700px;
+  }
+  .canvas {
+    width: 700px;
+   }
+}
