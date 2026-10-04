@@ -9,10 +9,9 @@ let row = canvas.height / scale;
 let column = canvas.width / scale;
 
 let snake = [];
-let food = [];
-
- 
+let food = []; 
 let d = "right";
+let score = 0;
 
 document.onkeydown = direction;
 
@@ -54,6 +53,11 @@ ctx.fillStyle = "#ff0";
 ctx.strokeStyle = "green";
 ctx.fillRect(food[0].x,food[0].y,scale,scale);
 ctx.strokeRect(food[0].x,food[0].y,scale,scale);
+
+ctx.fillStyle = "white";
+ctx.font = "20px Arial";
+ctx.fillText("Score : " + score,200,25)
+
     // Get current head position
     let snakex = snake[0].x;
     let snakey = snake[0].y;
@@ -79,7 +83,7 @@ if (snakex < 0 ) {
       snakey = canvas.height;  
   }
 if (snakex == food[0].x && snakey == food[0].y) {
-
+ score++;
   food[0] = {
     x:(Math.floor(Math.random()*row))*scale,
     y:(Math.floor(Math.random()*column))*scale
